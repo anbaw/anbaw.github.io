@@ -2,8 +2,27 @@
 
 <html>
 <head>
-<script src="https://cdn.optimizely.com/js/9757260949.js"></script>
-<meta http-equiv="refresh" content="0;URL='https://goo.gl/forms/Jm6VbPXxV6QtK3lO2'" />
+<script>
+    // An array of URL's
+    var URLs = [
+        "https://goo.gl/forms/oAsgHB0UOrfDZp5G3",
+        "https://goo.gl/forms/wIhEX7gUDooCuXf03",
+        "https://goo.gl/forms/nXI9HigalV90veGh1",
+        "https://goo.gl/forms/fYm8OCCZtTO9PwJT2",
+        "https://goo.gl/forms/M2fgYY3q3VkkziC63",
+        "https://goo.gl/forms/QaVNPIvbB9Xf26np1",
+        "https://goo.gl/forms/zBXho1lcGLjR5Eb03"
+    ];
+
+    // URLs.length will tell us how many elements are
+    // in the URLs array - we can use this to generate
+    // a random number between 0 and n (number of elements)
+    //    //
+    var URL = Math.floor(Math.random() * URLs.length);
+
+    window.open(URLs[URL]);
+
+</script>
 <title>Chat Quiz</title>
 </head>
 <body>
